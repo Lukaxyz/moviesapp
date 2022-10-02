@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.herewegoagain.fragments.HomeFragment"
+        android:label="My Movies!"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_popularFragment"
+            app:destination="@id/popularFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_genresFragment"
+            app:destination="@id/genresFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.example.herewegoagain.fragments.PopularFragment"
+        android:label="Popular Movies"
+        tools:layout="@layout/fragment_popular" >
+        <action
+            android:id="@+id/action_popularFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genresFragment"
+        android:name="com.example.herewegoagain.fragments.GenresFragment"
+        android:label="Genres"
+        tools:layout="@layout/fragment_genres">
+        <action
+            android:id="@+id/action_genresFragment_to_genreListFragment"
+            app:destination="@id/genreListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genreListFragment"
+        android:name="com.example.herewegoagain.fragments.GenreListFragment"
+        android:label="@string/my_movies"
+        tools:layout="@layout/fragment_genre_list">
+        <argument
+            android:name="genreId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.herewegoagain.fragments.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.herewegoagain.MovieDetailFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_movie_detail">
+        <argument
+            android:name="movieDetails"
+            app:argType="string[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.herewegoagain.ListFragment"
+        android:label="Movie List"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.herewegoagain.addlist.AddFragment"
+        android:label="Add"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/action_addFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:popUpTo="@id/listFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_update"
+        android:id="@+id/updateFragment"
+        android:name="com.example.herewegoagain.updatelist.UpdateFragment"
+        android:label="Update">
+        <action
+            android:id="@+id/action_updateFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:popUpTo="@id/listFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="currentMovie"
+            app:argType="com.example.herewegoagain.database.Movie" />
+    </fragment>
+</navigation>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">HereWeGoAgain</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_the_project">About The Project</string>
+    <string name="about_us">About Us</string>
+    <string name="about">About</string>
+    <string name="watch_list">Watch List</string>
+    <string name="o_nama">Projekta podrazumjeva razvoj Android aplikacije putem koje će se vršiti prezentacija podata dobivenih kroz Web API po vašem izboru. Besplate Web API-e možete pronaći na različitim web stranicama (npr. RapidAPI, CollectAPI, APIList i Mixed Analytics). Iako su servisi besplatni neki od njih zahtijevaju registraciju. U nastavku su navedena okvirna uputstva kojih se trebate pridržavati prilikom izrade aplikacije, kao i tehnički zahtjevi koje je potrebno ispuniti kako bi se osvojio maksimalan broj bodova. Detaljne funkcionalnosti nisu navedene kako bi se omogućilo iskazivanje kreativnosti studenata, sposobnosti dizajniranja aplikacije, ali kako bi dobili i raznovrsne aplikacije.</string>
+    <string name="movies_api_projekat">Movies API Projekat</string>
+    <string name="projekat_2">Projekat 2</string>
+    <string name="ime1">Nadžida Idrizović</string>
+    <string name="ime2">Luka Milenković</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="genres">Genres</string>
+    <string name="popular">Popular</string>
+    <string name="my_movies">My Movies!</string>
+    <string name="tell_your_friends">Tell your friends!</string>
+    <string name="share">Share</string>
+    <string name="rating_1_10">Rating ? 1-10</string>
+    <string name="movie_name">Movie Name</string>
+    <string name="movie_genre">Movie Genre</string>
+    <string name="add">Add</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_genre2">Movie Genre</string>
+    <string name="movie_rating_1_10">Movie Rating 1-10</string>
+    <string name="add_button_text">Add</string>
+</resources>
